@@ -1,0 +1,38 @@
+.project {
+  &__card {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    grid-template-rows: 1fr auto;
+    @media (max-width: $md3+px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+    gap: 20px;
+    &-img {
+      img {
+        grid-column: 1 /2;
+        grid-row: 1 / 2;
+        transition: all 0.3s ease-out;
+        filter: grayscale(100%);
+      }
+      &:hover {
+        img {
+          filter: grayscale(0%);
+        }
+      }
+    }
+
+    &-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+    &-title {
+      font-size: clamp(1.5rem, 1.7rem, 1.8rem);
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.nav {
+  padding-block: 20px;
+  border: 2px solid var(--text-color);
+  border-left: none;
+  border-right: none;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  &__list-item a {
+    color: var(--text-color);
+    transition: all 0.3s ease-out;
+    padding-block: 5px;
+    padding-inline: 14px;
+    border-radius: 20px;
+    &:hover {
+      color: var(--black);
+      background-color: var(--text-color);
+    }
+    &._active {
+      color: var(--black);
+      background-color: var(--text-color);
+    }
+  }
+}

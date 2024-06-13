@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "imgUrl": "./projects/project_1.png",
+    "title": "Essential items",
+    "stack": [
+      "ReactJS + Хуки",
+      "React Router",
+      "Axios",
+      "SCSS",
+      "React Context",
+      "React Skeleton"
+    ],
+    "hosting": "https://essential-items.vercel.app/",
+    "github": "https://github.com/amaliatyler/fashion-store"
+  }
+]
