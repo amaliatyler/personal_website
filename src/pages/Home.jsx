@@ -10,7 +10,7 @@ export default function Home() {
         <section id="about" className="about">
           <div className="about__img-wrapper _pic">
             <img className="asterisk" src="./asterisk.svg" alt="Астериск" />
-            <img src="./banner.jpg" alt="Фотография разработчика" />
+            <img src="./banner.JPG" alt="Фотография разработчика" />
           </div>
           <div className="about__descr">
             <h1>
