@@ -30,7 +30,7 @@ export default function ProjectCard(props) {
         <h3 className="project__card-title">{props.title}</h3>
         <p>Стек технологий:</p>
         <ul className="custom__list">
-          {props.stack && props.stack.map((item) => <li>{item}</li>)}
+          {props.stack && props.stack.map((item, i) => <li key={i}>{item}</li>)}
         </ul>
       </div>
     </li>
